@@ -6,10 +6,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
-# Download NLTK resources (run once)
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('punkt_tab')
+
 
 # Stopword Bahasa Indonesia
 stop_words = set(stopwords.words('indonesian'))
@@ -53,3 +50,4 @@ def clean_text(text: str) -> str:
 
 if __name__ == "__main__":
     print(clean_text("SELAMAT!!! Anda MENANG 50JT 🎉"))
+exit
