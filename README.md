@@ -1,3 +1,8 @@
+👤 Author
+
+Rekarius
+AI Engineer Portfolio Project
+
 # Day 1 – Text Cleaning Module for NLP (AI Engineer Portfolio)
 
 This project is part of a daily AI Engineer portfolio challenge.  
@@ -71,7 +76,40 @@ Without proper preprocessing:
 
 This module demonstrates a foundational skill required for AI Engineers before building any NLP model.
 
-👤 Author
 
-Rekarius
-AI Engineer Portfolio Project
+#🚀 API Usage
+
+This project exposes an Indonesian NLP preprocessing service via REST API.
+
+Start the API:
+uvicorn app.main:app --reload
+
+Then open:
+http://127.0.0.1:8000/docs
+
+Clean Text Endpoint:
+POST /clean-text
+
+Request body:
+{
+  "text": "SELAMAT!!! Anda MENANG 50JT 🎉"
+}
+
+Response:
+{
+  "cleaned_text": "selamat menang jt"
+}
+
+Use Cases
+
+-This API can be used for:
+
+-Spam & phishing detection
+
+-Sentiment analysis
+
+-Chatbot preprocessing
+
+-Social media monitoring
+
+-NLP pipelines
